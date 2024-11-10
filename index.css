@@ -68,7 +68,7 @@ nav a:hover::before {
 }
 
 .visit-btn {
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 3rem;
     border: none;
     font-weight: 500;
@@ -95,6 +95,19 @@ section {
     padding: 8rem 12%;
     width: 100%;
     position: relative;
+}
+
+.resume {
+    min-height: 50vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative; 
+}
+
+.resume p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(84, 81, 81);
 }
 
 .about {
@@ -212,8 +225,10 @@ a:visited {
 .grid-card {
     border: 2px solid #000;
     border-radius: 3rem;
+    color: rgb(84, 81, 81);
     padding: 3rem;
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
     align-items: baseline;
     justify-content: left;
@@ -315,27 +330,29 @@ a:visited {
 }
 
 .input-box input {
-    position: relative;
     border-radius: 3rem;
     border: 2px solid #000;
-    padding: 2rem 8rem;
-    font-size: 3rem;
+    padding: 0.6rem 2rem;
+    font-size: 1.5rem;
 }
 
 .input-box input::placeholder {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .input {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.input i {
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
+#message {
+    border: 2px solid #000;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    resize: none;
 }
 
 footer {

@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./img/logo_yr.png" type="image/x-icon">
-    <title>Yasser EL KHATTAB</title>
+    <title>YR</title>
 </head>
 <body>
     <header>
-        <a href="/" class="logo"><img src="./img/logo_yr.png" alt="Logo" ></a>
+        <a href="/" class="logo"><span>YR</span></a>
 
         <nav id="nav-header">
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">Visit Linkedin</button>
+        <button class="visit-btn"><i class="fa-brands fa-linkedin"></i> Linkedin</button>
     </header>
 
-    <section class="about" id="about">
+    <section class="about" id="hero">
         <div class="about-container">
             <img src="./img/profile.jpg" alt="Avatar">
 
@@ -36,16 +35,28 @@
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact</div>
+                    <a href="./assets/myCV.pdf" download="myCV.pdf" class="btn">Download CV</a>
+                    <a href="#contact" class="btn">Contact</a>
                 </div>
 
                 <div class="socials">
                     <a href="https://github.com/YasserYr1" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/yasser-elkhattab-9a3509244/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="about" class="resume">
+        <h2 class="section-title">A Propos</h2>
+        <p>
+            Développeur Full Stack en formation, passionné par la création des applications web.
+            Diplômé en développement Full Stack en 2023 et titulaire d'une Licence Professionnelle en Développement Web
+            et Mobile en 2024, je poursuis actuellement une formation en Métiers du Numérique à l'Université de Reims
+            Champagne-Ardenne (EISINE). Sérieux, motivé et curieux, j'apprends rapidement et m'engage pleinement dans
+            les projets que j'entreprends. Je souhaite intégrer une équipe professionnelle pour approfondir mes
+            compétences techniques et bénéficier de l'expérience des experts du domaine.
+        </p>
     </section>
 
     <section id="experience" class="experience">
@@ -55,21 +66,35 @@
             <div class="grid">
                 <div class="grid-card">
                     <i class="fa-solid fa-file-code"></i>
-                    <span>web Developement</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste lauda</p>
+                    <span>Développeur Web (stage)</span>
+                    <h3>1 mois</h3>
+                    <p>
+                        Lors d'un stage d'un mois, j'ai développé une application de
+                        gestion des congés avec Laravel et MySQL. Ce projet m'a permis
+                        d'approfondir mes compétences en PHP et Laravel, de mieux
+                        maîtriser les bases de données, et de renforcer mes
+                        connaissances en architecture MVC. J'ai également acquis de
+                        l'expérience dans la gestion de projet et l'optimisation
+                        d'interfaces utilisateur pour une utilisation fluide et efficace.
+                    </p>
                 </div>
 
                 <div class="grid-card">
                     <i class="fa-solid fa-file-code"></i>
-                    <span>web Developement</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste lauda</p>
+                    <span>FreeLance et Autoformation</span>
+                    <h3>1 Years</h3>
+                    <p>
+                        J'ai acquis une solide expérience en créant quatre applications
+                        MERN : deux e-commerce, une application de réservation type
+                        Airbnb, et une gestion de stock. J'ai aussi réalisé des landing pages
+                        en HTML, CSS, JavaScript, ainsi que des sites PHP avec MySQL. En
+                        parallèle, je développe mes compétences en Python et Java sur
+                        LeetCode et HackerRank, renforçant ainsi mon expertise en
+                        programmation et en développement d’applications full stack.
+                    </p>
                 </div>
 
             </div>
-
-            <img src="./img/profile.jpg" alt="avatar">
         </div>
     </section>
 
@@ -116,6 +141,26 @@
                     <a href="https://github.com/YasserYr1/Brightness" class="btn" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
                 </div>
             </div>
+
+            <div class="project-card">
+                <video class="project-video" controls muted>
+                    <source src="./video/Project5.mp4" type="video/mp4">
+                </video>
+                <div class="inline-group">
+                    <h3>C-Watch</h3>
+                    <a href="https://github.com/YasserYr1/rolex" class="btn" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <video class="project-video" controls muted>
+                    <source src="./video/Project6.mp4" type="video/mp4">
+                </video>
+                <div class="inline-group">
+                    <h3>Ziger</h3>
+                    <a href="https://github.com/YasserYr1/Ziger" class="btn" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,10 +168,12 @@
         <div class="input-box">
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="input">
+            <div class="input" id="input-inline">
+                <input type="text" placeholder="Nom Complète">
                 <input type="email" placeholder="example@email.com">
-                <i class="fa-solid fa-envelope"></i>
             </div>
+
+            <textarea name="message" id="message" placeholder="Message" cols="40"></textarea>
 
             <div class="btn">Submit</div>
         </div>
